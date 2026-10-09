@@ -1,0 +1,61 @@
+/*1.flow general de la pagina */
+body {
+    font-family : Arial, sans-serif; /*tipo de letra */
+    margin:0;/*Margen*/
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.507); /*volor de fondo*/
+    color: #0053ee; /*Color de texto*/
+
+}
+
+/*Encabezado (Header) */
+header {
+    background-color:rgba(127, 255, 212, 0.774);
+    text-align: center;
+    padding:  45px;
+
+}
+header h1 {
+    margin: 0;
+    color: black;
+
+}
+/* 3 menu de navegacion */
+
+nav {
+    background-color: rgb(21, 170, 216);
+    padding: 10px;
+
+}
+
+nav ul{
+    list-style: none; /*Quitar viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+nav li {
+    display: inline-block;/*pone los elementos en la fila,uno al lado del otro*/
+    margin:0 15px ;
+
+}
+
+nav ul li a {
+ color: antiquewhite;
+text-decoration: none;
+
+}
+
+nav ul li a:hover{
+text-decoration: underline;
+}
+
+/*contenedor principal */
+.contenedor {
+    display: flex;/* Activa el modo flex*/
+    flex-wrap: wrap;/*permite que las filas se adaptan segun el tamaño de la pantalla*/
+    gap: 20px; /* espacios entre la seccion y el aside*/
+    padding: 20px;
+    
+}
